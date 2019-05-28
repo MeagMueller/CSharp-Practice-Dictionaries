@@ -25,6 +25,12 @@ namespace dictionary_of_words
                 words and output them to the console
             */
 
+            Console.WriteLine(wordsAndDefinitions["multifarious"]);
+            Console.WriteLine(wordsAndDefinitions["ephemeral"]);
+
+            Console.WriteLine();
+
+
             /*
                 Loop over dictionary to get the following output:
                     The definition of [WORD] is [DEFINITION]
@@ -33,6 +39,7 @@ namespace dictionary_of_words
             */
             foreach (KeyValuePair<string, string> word in wordsAndDefinitions)
             {
+                Console.WriteLine($"The definition of {word.Key} is {word.Value}.");
             }
         }
     }
